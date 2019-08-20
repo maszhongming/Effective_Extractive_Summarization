@@ -10,7 +10,7 @@ import torch
 import torch.multiprocessing as mp
 from pytorch_pretrained_bert.tokenization import BertTokenizer
 tokenizer = BertTokenizer.from_pretrained(
-    '/path/tp/uncased_L-24_H-1024_A-16/vocab.txt')
+    '/path/to/uncased_L-24_H-1024_A-16/vocab.txt')
 MAX_ARTICLE_LEN = 512
 
 # Batching functions
