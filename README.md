@@ -78,8 +78,9 @@ The results will be printed on the screen and saved in the `BiLSTM_PN_W2V` folde
 
 ## Result
 You can read [our paper](https://arxiv.org/abs/1907.03491) to get the results of our experiments.
+
 The outputs produced by our different models on CNN/DailyMail dataset will be released soon.
 
 ## Note
-1. Part of out code uses the the implementation of [fast_abs_rl](https://github.com/ChenRocks/fast_abs_rl) and [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch). Thans for their work !
+1. Part of out code uses the the implementation of [fast_abs_rl](https://github.com/ChenRocks/fast_abs_rl) and [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch). Thanks for their work !
 2. Code about RL is coming soon.
