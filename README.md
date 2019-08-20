@@ -35,7 +35,7 @@ We have already processed CNN/DailyMail dataset, you can download it through [th
 
 You should fill in the three paths in the files before running the code.
 1. path to RELEASE-1.5.5 (evaluate.py line 14), example: `/home/ROUGE/RELEASE-1.5.5`
-2. path to vocab.txt (decdoing.py line 67 and data/batcher.py line 13), example: `/home/pretrain_model/uncased_L-24_H-1024_A-16/vocab.txt`
+2. path to vocab.txt (decoding.py line 67 and data/batcher.py line 13), example: `/home/pretrain_model/uncased_L-24_H-1024_A-16/vocab.txt`
 3. path to BERT model (model/extract.py line 255), example: `/home/pretrain_model/uncased_L-24_H-1024_A-16`
 
 ## Train
