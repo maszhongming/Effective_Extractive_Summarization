@@ -61,6 +61,8 @@ def set_parameters(args):
         args.encoder_layer = 4
         args.encoder_hidden = 512
     elif args.encoder == 'Transformer' and args.decoder == 'SL':
+        args.lr = 5e-5
+        args.patience = 10
         args.encoder_layer = 12
         args.encoder_hidden = 512
     elif args.encoder == 'DeepLSTM' and args.decoder == 'PN':
