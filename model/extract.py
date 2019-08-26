@@ -237,7 +237,7 @@ class LSTMPointerNet(nn.Module):
         
 
 class Summarizer(nn.Module):
-    """ rnn-ext"""
+    """ Different encoder/decoder/embedding type """
     def __init__(self, encoder, decoder, emb_type, emb_dim, vocab_size, 
                  conv_hidden, encoder_hidden, encoder_layer, 
                  isTrain=True, n_hop=1, dropout=0.0):
