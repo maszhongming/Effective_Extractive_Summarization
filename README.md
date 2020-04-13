@@ -40,7 +40,7 @@ You should fill in the three paths in the files before running the code.
 
 ## Train
 
-We currently offer a variety of options to combine into a model. For the encoder, we provide **BiLSTM/Transformer/DeepLSTM**. For the decoder, we provide **Sequence Labeling/Pointer Network**. For the type of word embedding, we provide **Word2Vec/BERT**.
+We currently provide a variety of options to combine into a model. For the encoder, we provide **BiLSTM/Transformer/DeepLSTM**. For the decoder, we provide **Sequence Labeling/Pointer Network**. For the type of word embedding, we provide **Word2Vec/BERT**.
 We only tested the code on the GPU, and we strongly recommend using the GPU to train your model because of the long training time.
 
 To run BiLSTM + Pointer Network + Word2Vec model, run
@@ -61,26 +61,25 @@ To run DeepLSTM + Pointer Network + BERT model (models with BERT have a long tra
 CUDA_VISIBLE_DEVICES=0 python main.py --mode=train --encoder=DeepLSTM --decoder=PN --emb_type=BERT
 ```
 
-You can try any other combination to train your model.
+You can try any other combination to train your own model.
 
 ## Test
 
-When you have completed the training process, you can test best five models and get ROUGE scoere by the following instructions.
-You only need to switch mode to test, and the other commands are unchanged.
+After completing the training process, you can test the five best models and obtain ROUGE score by the following instructions.
+You only need to switch mode to test, leaving other commands unchanged.
 
 For example, when you test BiLSTM + Pointer Network + Word2Vec model, run
 
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py --mode=test --encoder=BiLSTM --decoder=PN --emb_type=W2V
 ```
-The results will be printed on the screen and saved in the `BiLSTM_PN_W2V` folder
+The results will be printed on the screen and saved in the `BiLSTM_PN_W2V` folder.
 
 
-## Result
-You can read [our paper](https://arxiv.org/abs/1907.03491) to get the results of our experiments.
+## Output
 
-The outputs produced by our different models on CNN/DailyMail dataset will be released soon.
+You can find the outputs produced by our different models in this paper on CNN/DailyMail in [this link](https://drive.google.com/open?id=1Ipo5a8O33O-LNQRc_xBtU1CaC8ZEWBpy).
 
 ## Note
-1. Part of out code uses the the implementation of [fast_abs_rl](https://github.com/ChenRocks/fast_abs_rl) and [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch). Thanks for their work !
-2. Code about RL is coming soon.
+1. Part of our code uses the the implementation of [fast_abs_rl](https://github.com/ChenRocks/fast_abs_rl) and [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch). Thanks for their work!
+2. For the code of reinforcement learning, we use the implementation in [fast_abs_rl](https://github.com/ChenRocks/fast_abs_rl). The only difference is that we changed the parameter *reward* in their file *train_full_rl.py* to ROUGE-1-precision and the parameter *stop* to 8.5. If you are interested in the implementation of this part, please directly refer to their code.
