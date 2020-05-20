@@ -78,7 +78,7 @@ The results will be printed on the screen and saved in the `BiLSTM_PN_W2V` folde
 
 ## Output
 
-You can find the outputs produced by our different models in this paper on CNN/DailyMail through [this link](https://drive.google.com/open?id=1Ipo5a8O33O-LNQRc_xBtU1CaC8ZEWBpy).
+You can find the outputs produced by our different models in this paper on CNN/DailyMail through [this link](https://drive.google.com/open?id=1VuZp2Wq3TH4kaXzuID34_e6VkBxa5Gkf).
 
 ## Note
 1. Part of our code uses the the implementation of [fast_abs_rl](https://github.com/ChenRocks/fast_abs_rl) and [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch). Thanks for their work!
