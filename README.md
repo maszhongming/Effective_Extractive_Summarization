@@ -22,7 +22,7 @@ If you use our code or data, please cite our paper:
 - [tensorboardX](https://github.com/lanpa/tensorboard-pytorch)
 - [pyrouge](https://github.com/bheinzerling/pyrouge)
 - [pytorch-pretrained-bert](https://github.com/huggingface/pytorch-transformers) 0.6.1
-	- now is pytorch-transformers, you can use *pip* to install pytorch-pertrained-bert (0.6.1)
+	- now is pytorch-transformers, you can use *pip* to install pytorch-pretrained-bert (0.6.1)
 	- You should download the BERT model(bert-large-uncased) and convert it to a pytorch version, get a folder called `uncased_L-24_H-1024_A-16`
 	
 All code only supports running on *Linux*.
